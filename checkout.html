@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Checkout and review your order.">
+  <link rel="stylesheet" href="CSS/style.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./Images/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./Images/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./Images/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="./Images/favicon_io/site.webmanifest">
+  <link rel="icon" type="image/x-icon" href="./Images/favicon_io/favicon.ico">
+  <link rel="icon" type="image/png" sizes="512x512" href="./Images/favicon_io/android-chrome-512x512.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./Images/favicon_io/android-chrome-192x192.png">
+
+  <title>Toy Haven | Checkout</title>
+
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <section class="top-bar" aria-label="Store information">
+      <div class="top-bar-container">
+        <p class="delivery-mesaage">
+          <img src="./Images/Icons/Delivery.png" alt="Islandwide Delivery" class="header-small-icon">
+          Islandwide Delivery
+        </p>
+
+        <nav class="top-links">
+          <ul>
+            <li>
+              <a href="support.html">Help &amp; Support</a>
+            </li>
+            <li>
+              <a href="products.html">Shop</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Main Header -->
+     <section class="main-header" aria-label="Main header information">
+      <div class="main-header-container">
+        <a href="index.html" class="logo-link">
+          <img src="./Images/Logo.png" alt="Toy Haven Logo">
+          <span>Toy Haven</span>
+        </a>
+
+        <form action="products.html" class="header-search" method="get">
+          <label for="hsearch">Search Marketplace</label>
+          <input type="search" id="hSearch" name="search" placeholder="Search toys, games and gifts...">
+          <button type="submit">
+            <img src="./Images/Icons/Search.png" alt="Search" class="search-icon">
+          </button>
+        </form>
+
+        <nav class="nav-actions" aria-label="Shortcuts">
+
+          <a href="wishlist.html" class="nav-action">
+            <img src="./Images/Icons/Heart2.png" alt="Wishlist" class="nav-icon">
+            Wishlist
+          </a>
+
+          <a href="cart.html" class="nav-action">
+            <img src="./Images/Icons/Cart.png" alt="Cart" class="nav-icon">
+            Cart
+          </a>
+
+        </nav>
+      </div>
+     </section>
+
+     <!-- Base Navigation Part -->
+     <nav class="base-nav">
+      <div class="base-nav-container menu">
+
+        <button type="button" aria-expanded="false" aria-controls="categoryDropdown">
+          <img src="./Images/Icons/Categories.png" alt="Shop by Category" class="menu-icon">
+          Shop by Category
+          <img src="./Images/Icons/DownArrow.png" alt="Drop Down Arrow" class="arrow-icon">
+        </button>
+
+        <ul class="category-dropdown" id="categoryDropdown">
+          <li>
+            <a href="products.html?category=Toy%20Cars">Toy Cars</a>
+          </li>
+          <li>
+            <a href="products.html?category=Bath%20Toys">Bath Toys</a>
+          </li>
+          <li>
+            <a href="products.html?category=Board%20%26%20Card%20Games">Board &amp; Card Games</a>
+          </li>
+          <li>
+            <a href="products.html?category=Dolls">Dolls</a>
+          </li>
+          <li>
+            <a href="products.html?category=Riding%20Toys">Riding Toys</a>
+          </li>
+          <li>
+            <a href="products.html?category=Stuffed%20%26%20Plush%20Animals">Stuffed &amp; Plush Animals</a>
+          </li>
+        </ul>
+
+        <button type="button" class="menu-toggle" aria-expanded="false">
+          <img src="./Images/Icons/Hamburger.png" alt="Open Navigation Menu" class="menu-icon">
+          Open navigation menu
+        </button>
+
+        <ul class="main-nav" id="mainNavigation">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="products.html">Shop</a>
+          </li>
+          <li>
+            <a href="support.html">FAQ</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+     </nav>
+  </header>
+
+  <main id="main-container">
+    <section class="page-banner">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li aria-current="page">Checkout</li>
+          </ol>
+        </nav>
+
+        <h1>Checkout</h1>
+        <p>Enter your delivery details and review your order before placing it.</p>
+      </div> 
+    </section>
+
+    <section class="section-container">
+      <section class="checkout-layout">
+        <article class="checkout-card">
+          <header class="content-heading">
+            <h2>Delivery Details</h2>
+          </header>
+
+          <form class="checkout-form" id="checkoutForm" novalidate>
+            <section class="form-group">
+
+              <label for="fullName">Full Name</label>
+              <input type="text" id="fullName" autocomplete="name">
+              <p class="form-error" id="fullNameError"></p>
+            </section>
+
+            <section class="form-row">
+              <section class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" autocomplete="email">
+                <p class="form-error" id="emailError"></p>
+              </section>
+
+              <section class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" autocomplete="tel">
+                <p class="form-error" id="phoneError"></p>
+              </section>
+            </section>
+
+            <section class="form-group">
+              <label for="deliveryAddress">Delivery Address</label>
+              <textarea id="deliveryAddress" rows="4" autocomplete="street-address"></textarea>
+              <p class="form-error" id="addressError"></p>
+            </section>
+
+            <section class="form-group">
+              <label for="city">City</label>
+              <input type="text" id="city" autocomplete="address-level3">
+              <p class="form-error" id="cityError"></p>
+            </section>
+
+            <fieldset class="payment-methods">
+              <legend>Payment Method</legend>
+              <label class="payment-method">
+                <input type="radio" name="paymentMethod" value="Card">
+                <span>
+                  <img src="./Images/Icons/Card-Payment.png" alt="Card Payment" class="payment-icon"
+>
+                  Card
+                </span>
+              </label>
+
+              <label class="payment-method">
+                <input type="radio" name="paymentMethod" value="Cash on Delivery">
+                <span>
+                  <img src="./Images/Icons/Cash.png" alt="Cash on delivery" class="payment-icon">
+                  Cash on Delivery
+                </span>
+              </label>
+
+              <section class="card-details" id="cardDetails">
+
+                <h3>Card Details</h3>
+                <section class="form-group">
+                  <label for="cardName">Name on Card</label>
+                  <input type="text" name="" id="cardName" placeholder="Enter Name on Card" autocomplete="cc-name">
+                  <p class="form-error" id="cardNameError"></p>
+                </section>
+
+                <section class="form-group">
+                  <label for="cardNumber">Card Number</label>
+                  <input type="text" name="" id="cardNumber" placeholder="1234 5678 9012 3456"
+                  maxlength="19" inputmode="numeric" autocomplete="cc-number">
+                  <p class="form-error" id="cardNumberError"></p>
+                </section>
+
+                <section class="form-row">
+                  <section class="form-group">
+                    <label for="cardExpiry">Expiry Date</label>
+                    <input type="text" id="cardExpiry" placeholder="MM/YY" maxlength="5" autocomplete="cc-exp">
+                    <p class="form-error" id="cardExpiryError"></p>
+                  </section>
+
+                  <section class="form-group">
+                    <label for="cardCvv">CVV</label>
+                    <input type="password" id="cardCvv" placeholder="123" maxlength="3" inputmode="numeric" autocomplete="cc-csc">
+                    <p class="form-error" id="cardCvvError"></p>
+                  </section>
+
+                  <section>
+                    <p class="card-demo-note">
+                      Your card details are securely handled during checkout and are not stored by Toy Haven.
+                    </p>
+                  </section>
+
+                </section>
+              </section>
+
+              <p class="form-error" id="paymentError"></p>
+            </fieldset>
+
+            <section class="checkout-message">
+              <img src="./Images/Icons/Information.png" alt="Checkout message" class="checkout-info-icon">
+              <p>Select your preferred payment method to continue with your order.</p>
+            </section>
+
+            <button type="submit" class="button button-primary button-full">Place Order</button>
+          </form>
+
+          <section class="checkout-success" id="checkoutSuccess" aria-live="polite">
+            <img src="./Images/Icons/Success.png" alt="Order success" class="success-icon">
+            <h2 id="checkoutSuccessTitle">Your order has been placed!</h2>
+
+            <p id="orderNumberText"></p>
+            <a href="products.html" class="button button-primary">Continue Shopping</a>
+          </section>
+        </article>
+
+        <aside class="checkout-summary">
+          <h2>Order Summary</h2>
+          <section id="checkoutItems"></section>
+
+          <hr>
+
+          <section class="summary-row total-row">
+            <span>Estimated total</span>
+            <strong id="checkoutTotal">Rs. 0</strong>
+          </section>
+        </aside>
+      </section>
+    </section>
+  </main>
+
+  <!-- Footer -->
+   <footer class="site-footer">
+    <div class="footer-grid">
+
+      <section class="footer-about">
+        <p>A cheerful online toy shop bringing fun, imagination &amp; playful discoveries to families across Sri Lanka.</p>
+      </section>
+
+      <section>
+        <h3>Shop</h3>
+        <ul class="shop-links">
+          <li><a href="products.html?category=Toy%20Cars">Toy Cars</a></li>
+          <li><a href="products.html?category=Bath%20Toys">Bath Toys</a></li>
+          <li><a href="products.html?category=Board%20%26%20Card%20Games">Board &amp; Card Games</a></li>
+          <li><a href="products.html?category=Dolls">Dolls</a></li>
+          <li><a href="products.html?category=Riding%20Toys">Riding Toys</a></li>
+          <li><a href="products.html?category=Stuffed%20%26%20Plush%20Animals">Stuffed &amp; Plush Animals</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Quick Links</h3>
+        <ul class="shop-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Shop</a></li>
+          <li><a href="wishlist.html">Wishlist</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Customer Support</h3>
+        <ul class="shop-links">
+          <li><a href="support.html#faq">FAQ</a></li>
+          <li><a href="support.html#feedback">Feedback</a></li>
+          <li><a href="support.html#delivery">Delivery Information</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Contact</h3>
+        <ul class="footer-contact">
+          <li>
+            <img src="./Images/Icons/Phone.png" alt="Phone Number" class="footer-icon">
+            +94 70 444 7583
+          </li>
+
+          <li>
+            <img src="./Images/Icons/Email.png" alt="Email Address" class="footer-icon">
+            hello@toyhaven.lk
+          </li>
+
+          <li>
+            <img src="./Images/Icons/Location.png" alt="Address" class="footer-icon">
+            Kandy, Sri Lanka
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <section class="footer-bottom">
+      <div class="container">
+        <p> &copy; 2026 Toy Haven. All Rights Reserved.</p>
+      </div>
+    </section>
+
+  </footer>
+  
+  <script src="JavaScript/products.js"></script>
+  <script src="JavaScript/common.js"></script>
+  <script src="JavaScript/checkout.js"></script>
+
+</body>
+</html>

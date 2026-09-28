@@ -1,0 +1,22 @@
+{
+  "name": "Toy Haven",
+  "short_name": "Toy Haven",
+  "description": "An online toy store for toys, games and playful discoveries.",
+  "start_url": "../../index.html",
+  "scope": "../../",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#E27396",
+  "icons": [
+    {
+      "src": "android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

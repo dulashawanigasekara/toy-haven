@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="toys, toy shop, teddy bears, toy cars, bath toys, board games">
+  <meta name="description" content="Shop toy cars, bath toys, board games, dolls, riding toys and plush animals online - Sri Lanka">
+
+  <link rel="stylesheet" href="./CSS/style.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./Images/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./Images/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./Images/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="./Images/favicon_io/site.webmanifest">
+  <link rel="icon" type="image/x-icon" href="./Images/favicon_io/favicon.ico">
+  <link rel="icon" type="image/png" sizes="512x512" href="./Images/favicon_io/android-chrome-512x512.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./Images/favicon_io/android-chrome-192x192.png">
+  
+  <title>Toy Haven | Toys, Games & Gift Items</title>
+  
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <section class="top-bar" aria-label="Store information">
+      <div class="top-bar-container">
+        <p class="delivery-mesaage">
+          <img src="./Images/Icons/Delivery.png" alt="Islandwide Delivery" class="header-small-icon">
+          Islandwide Delivery
+        </p>
+
+        <nav class="top-links">
+          <ul>
+            <li>
+              <a href="support.html">Help &amp; Support</a>
+            </li>
+            <li>
+              <a href="products.html">Shop</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Main Header -->
+     <section class="main-header" aria-label="Main header information">
+      <div class="main-header-container">
+        <a href="index.html" class="logo-link">
+          <img src="./Images/Logo.png" alt="Toy Haven Logo">
+          <span>Toy Haven</span>
+        </a>
+
+        <form action="products.html" class="header-search" method="get">
+          <label for="hSearch">Search Marketplace</label>
+          <input type="search" id="hSearch" name="search" placeholder="Search toys, games and gifts...">
+          <button type="submit">
+            <img src="./Images/Icons/Search.png" alt="Search" class="search-icon">
+          </button>
+        </form>
+
+        <nav class="nav-actions" aria-label="Shortcuts">
+
+          <a href="wishlist.html" class="nav-action">
+            <img src="./Images/Icons/Heart2.png" alt="Wishlist" class="nav-icon">
+            Wishlist
+          </a>
+
+          <a href="cart.html" class="nav-action">
+            <img src="./Images/Icons/Cart.png" alt="Cart" class="nav-icon">
+            Cart
+          </a>
+
+        </nav>
+      </div>
+     </section>
+
+     <!-- Base Navigation Part -->
+     <nav class="base-nav">
+      <div class="base-nav-container menu">
+
+        <button type="button" aria-expanded="false" aria-controls="categoryDropdown">
+          <img src="./Images/Icons/Categories.png" alt="Shop by Category" class="menu-icon">
+          Shop by Category
+          <img src="./Images/Icons/DownArrow.png" alt="Drop Down Arrow" class="arrow-icon">
+        </button>
+
+        <ul class="category-dropdown" id="categoryDropdown">
+          <li>
+            <a href="products.html?category=Toy%20Cars">Toy Cars</a>
+          </li>
+          <li>
+            <a href="products.html?category=Bath%20Toys">Bath Toys</a>
+          </li>
+          <li>
+            <a href="products.html?category=Board%20%26%20Card%20Games">Board &amp; Card Games</a>
+          </li>
+          <li>
+            <a href="products.html?category=Dolls">Dolls</a>
+          </li>
+          <li>
+            <a href="products.html?category=Riding%20Toys">Riding Toys</a>
+          </li>
+          <li>
+            <a href="products.html?category=Stuffed%20%26%20Plush%20Animals">Stuffed &amp; Plush Animals</a>
+          </li>
+        </ul>
+
+        <button type="button" class="menu-toggle" aria-expanded="false">
+          <img src="./Images/Icons/Hamburger.png" alt="Open Navigation Menu" class="menu-icon">
+          Open navigation menu
+        </button>
+
+        <ul class="main-nav" id="mainNavigation">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="products.html">Shop</a>
+          </li>
+          <li>
+            <a href="support.html">FAQ</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+     </nav>
+  </header>
+
+  <main id="main-container">
+    <section class="hero-slider" aria-label="Promotions">
+      <article class="active-slide">
+        <img src="./Images/Banners/Banner1.png" alt="Colourful toys for children" class="hero-image">
+
+        <section class="hero-content">
+          <p class="hero-para">
+            Welcome to Toy haven</p>
+
+          <h1>Big Adventures Start Small</h1>
+
+          <p>Explore playful toys made for unforgettable moments, imagination and smiles.</p>
+
+          <a href="products.html" class="shop-button">Shop Toys</a>
+        </section>
+      </article>
+
+      <article class="primary-slide">
+        <img src="./Images/Banners/Banner2.png" alt="Toy cars and riding toys" class="hero-image">
+
+        <section class="hero-content">
+          <p class="hero-para">
+            Ready, Set, Play
+          </p>
+
+          <h2>Little Drivers, Big Adventures</h2>
+
+          <p>Discover colourful toy cars and exciting riding toys for energetic little explorers.</p>
+
+          <a href="products.html?category=Toy%20Cars" class="shop-button">
+            Explore Cars
+          </a>
+        </section>
+      </article>
+
+      <article class="primary-slide">
+        <img src="./Images/Banners/Banner3.png" alt="Colourful bath toys" class="hero-image">
+        <section class="hero-content">
+          <p class="hero-para">
+            Splash &amp; Smile
+          </p>
+
+          <h2>Make Bath Time More Fun</h2>
+
+          <p>Turn everyday bath time into an exciting world of colourful floating friends.</p>
+
+          <a href="products.html?category=Bath%20Toys" class="shop-button">Shop Bath Toys</a>
+        </section>
+      </article>
+
+      <article class="primary-slide">
+        <img src="./Images/Banners/Banner4.png" alt="Board and card games for children" class="hero-image">
+        <section class="hero-content">
+          <p class="hero-para">
+            Fun for Everyone
+          </p>
+
+          <h2>Game Night Starts Here</h2>
+
+          <p>Bring the family together with games made for laughter, and friendly competition.</p>
+
+          <a href="products.html?category=Board%20%26%20Card%20Games" class="shop-button">Shop Games</a>
+        </section>
+      </article>
+
+      <section class="dots-hero" aria-label="Choose promotional slide">
+        
+        <button type="button" class="dot-hero-active" aria-label="Show slide 1" data-slide="0"></button>
+
+        <button type="button" class="dot-hero" aria-label="Show slide 2" data-slide="1"></button>
+
+        <button type="button" class="dot-hero" aria-label="Show slide 3" data-slide="2"></button>
+
+        <button type="button" class="dot-hero" aria-label="Show slide 4" data-slide="3"></button>
+
+      </section>
+    </section>
+
+    <!-- Categories -->
+     <section class="section-container" id="categories">
+      <header class="section-header">
+        <p class="section-label">Find their Favorites</p>
+
+        <h2>Shop by Category</h2>
+
+        <p>From speedy cars to cuddly companions, there is something fun waiting for every child.</p>
+      </header>
+
+      <section class="category-grid">
+
+        <article class="category-card">
+
+          <img src="./Images/Categories/Toy-Cars.png" alt="Toy cars">
+
+          <section class="card-content">
+
+            <h3>Toy Cars</h3>
+
+            <p>Racing cars, rescue vehicles &amp; miniature adventures.</p>
+
+            <a href="products.html?category=Toy%20Cars" class="text-link">Shop Now
+              <img src="./Images/Icons/RightArrow.png" alt="Shop Now" class="text-link-icon">
+            </a>
+          </section>
+        </article>
+
+        <article class="category-card">
+          <img src="./Images/Categories/Bath-Toys.png" alt="Colourful bath toys">
+
+          <section class="card-content">
+            <h3>Bath Toys</h3>
+
+            <p>Floating, squirting and splashy fun for bath time.</p>
+
+            <a href="products.html?category=Bath%20Toys" class="text-link"> Shop Now
+              <img src="./Images/Icons/RightArrow.png" alt="Shop Now" class="text-link-icon">
+            </a>
+          </section>
+        </article>
+
+        <article class="category-card">
+          <img src="./Images/Categories/Board&CardGames.png" alt="Board and card games">
+
+          <section class="card-content">
+            <h3>Board &amp; Card Games</h3>
+
+            <p>Family games for thinking, laughing &amp; playing together.</p>
+
+            <a href="products.html?category=Board%20%26%20Card%20Games" class="text-link">Shop Now
+              <img src="./Images/Icons/RightArrow.png" alt="Shop Now" class="text-link-icon">
+            </a>
+
+          </section>
+        </article>
+
+        <article class="category-card">
+          <img src="./Images/Categories/Dolls.png" alt="Dolls">
+
+          <section class="card-content">
+            <h3>Dolls</h3>
+
+            <p>Imaginative characters ready for stories, friendship &amp; play.</p>
+
+            <a href="products.html?category=Dolls" class="text-link">Shop Now
+              <img src="./Images/Icons/RightArrow.png" alt="Shop Now" class="text-link-icon">
+            </a>
+          </section>
+        </article>
+
+        <article class="category-card">
+          <img src="./Images/Categories/Riding-Toys.png" alt="Colorful riding toys">
+
+          <section class="card-content">
+            <h3>Riding Toys</h3>
+
+            <p>Balance bikes &amp; ride-ons for active little adventurers.</p>
+
+            <a href="products.html?category=Riding%20Toys" class="text-link">Shop Now
+              <img src="./Images/Icons/RightArrow.png" alt="Shop Now" class="text-link-icon">
+            </a>
+          </section>
+        </article>
+
+        <article class="category-card">
+          <img src="./Images/Categories/PlushAnimals.png" alt="Soft stuffed and plush animals">
+
+          <section class="card-content">
+            <h3>Stuffed &amp; Plush Animals</h3>
+
+            <p>Soft &amp; cuddly friends for comforting hugs &amp; bedtime.</p>
+
+            <a href="products.html?category=Stuffed%20%26%20Plush%20Animals" class="text-link">Shop Now
+              <img src="./Images/Icons/RightArrow.png" alt="Shop Now" class="text-link-icon">
+            </a>
+          </section>
+        </article>
+
+      </section>
+     </section>
+
+     <!-- Toy of the Day -->
+      <section class="featured-toy">
+        <div class="container">
+          <header class="feature-header">
+            <p class="ftr-label">Today's Pick</p>
+
+            <h2>Featured Product of the Day</h2>
+
+          </header>
+
+          <article class="ftr-toy" id="ftrToy">
+            <p class="load-text">Loading today's featured toy...</p>
+
+          </article>
+        </div>
+      </section>
+
+      <!-- Kids' Favorites -->
+       <section class="section-reveal">
+        <header class="prime-header">
+
+          <section>
+            <p class="prime-label">Loved by Families</p>
+            <h2>Popular Products</h2>
+            <p>Some of our favorite picks from across Toy Haven..</p>
+          </section>
+
+          <a href="products.html" class="fav-btn">View All Products</a>
+        </header>
+        <section class="product-grid" id="popularProducts">
+          <p class="load-text">Loading Products...</p>
+        </section>
+       </section>
+
+       <!-- Why Toy Haven -->
+        <section class="whyToyHaven" id="why-shop">
+          <div class="container">
+            <header class="prime-header">
+              <p class="prime-label">Shopping Made Simple</p>
+              <h2>Why Shop With Toy Haven?</h2>
+            </header>
+
+            <section class="why-grid">
+              <article class="why-card">
+                <img src="./Images/Icons/Delivery.png" alt="Island-wide Delivery" class="why-icon">
+                <h3>Island-wide Delivery</h3>
+                <p>Convenient toy delivery to homes throughout Sri Lanka.</p>
+              </article>
+
+              <article class="why-card">
+                <img src="./Images/Icons/Safe.png" alt="Safe & Quality Toys" class="why-icon">
+                <h3>Safe &amp; Quality Toys</h3>
+                <p>Products selected with enjoyable, child-friendly play in mind.</p>
+              </article>
+
+              <article class="why-card">
+                <img src="./Images/Icons/Easy-order.png" alt="Easy Ordering" class="why-icon">
+                <h3>Easy Ordering</h3>
+                <p>Add favourites, manage your cart &amp; complete our simple checkout.</p>
+              </article>
+
+              <article class="why-card">
+                <img src="./Images/Icons/Support.png" alt="Friendly Support" class="why-icon">
+                <h3>Friendly Support</h3>
+                <p>Need help? Our support &amp; contact pages are always easy to find.</p>
+              </article>
+            </section>
+          </div>
+        </section>
+
+        <!-- About -->
+         <section class="aboutShop" id="about-Toy-Haven">
+          <div class="containerAbout">
+            <section>
+              <p class="section-label">About Us</p>
+              <h2>A Happy Place for Play</h2>
+            </section>
+            <p>Toy Haven is designed to make online toy shopping cheerful and easy for parents, gift shoppers and young toy lovers. Browse by category, save favourites and build your own playful collection.</p>
+          </div>
+         </section>
+
+         <!-- Newsletter -->
+         <section class="newsletter-section">
+          <div class="newsletter-container">
+            <section>
+              <p class="section-label">
+                Stay in the loop
+              </p>
+              <h2>Join the Toy Haven Family</h2>
+              <p>Get updates about new toys and special offers.</p>
+            </section>
+            <form class="newsletter-form" id="newsletterForm">
+              <label for="newsletterEmail">Email Address</label>
+
+              <section class="newsletter-input">
+                <input type="email" id="newsletterEmail" placeholder="you@example.com" required>
+                <button type="submit" class="button-primary">Subscribe</button>
+              </section>
+
+              <p class="form-error" id="newsletterError" aria-live="polite"></p>
+              <p class="form-success" id="newsletterSuccess" aria-live="polite"></p>
+            </form>
+          </div>
+         </section>
+  </main>
+
+  <!-- Footer -->
+   <footer class="site-footer">
+    <div class="footer-grid">
+
+      <section class="footer-about">
+        <p>A cheerful online toy shop bringing fun, imagination &amp; playful discoveries to families across Sri Lanka.</p>
+      </section>
+
+      <section>
+        <h3>Shop</h3>
+        <ul class="shop-links">
+          <li><a href="products.html?category=Toy%20Cars">Toy Cars</a></li>
+          <li><a href="products.html?category=Bath%20Toys">Bath Toys</a></li>
+          <li><a href="products.html?category=Board%20%26%20Card%20Games">Board &amp; Card Games</a></li>
+          <li><a href="products.html?category=Dolls">Dolls</a></li>
+          <li><a href="products.html?category=Riding%20Toys">Riding Toys</a></li>
+          <li><a href="products.html?category=Stuffed%20%26%20Plush%20Animals">Stuffed &amp; Plush Animals</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Quick Links</h3>
+        <ul class="shop-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Shop</a></li>
+          <li><a href="wishlist.html">Wishlist</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Customer Support</h3>
+        <ul class="shop-links">
+          <li><a href="support.html#faq">FAQ</a></li>
+          <li><a href="support.html#feedback">Feedback</a></li>
+          <li><a href="support.html#delivery">Delivery Information</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Contact</h3>
+        <ul class="footer-contact">
+          <li>
+            <img src="./Images/Icons/Phone.png" alt="Phone Number" class="footer-icon">
+            +94 70 444 7583
+          </li>
+
+          <li>
+            <img src="./Images/Icons/Email.png" alt="Email Address" class="footer-icon">
+            hello@toyhaven.lk
+          </li>
+
+          <li>
+            <img src="./Images/Icons/Location.png" alt="Address" class="footer-icon">
+            Kandy, Sri Lanka
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <section class="footer-bottom">
+      <div class="container">
+        <p> &copy; 2026 Toy Haven. All Rights Reserved.</p>
+      </div>
+    </section>
+
+  </footer>
+  
+  <script src="JavaScript/products.js"></script>
+  <script src="JavaScript/common.js"></script>
+  <script src="JavaScript/home.js"></script>
+
+</body>
+</html>
