@@ -53,7 +53,7 @@
         </a>
 
         <form action="products.html" class="header-search" method="get">
-          <label for="hsearch">Search Marketplace</label>
+          <label for="hSearch">Search Marketplace</label>
           <input type="search" id="hSearch" name="search" placeholder="Search toys, games and gifts...">
           <button type="submit">
             <img src="./Images/Icons/Search.png" alt="Search" class="search-icon">
@@ -145,9 +145,9 @@
       </div>
     </section>
 
-    <section class="section-container">
+    <div class="section-container">
       <form class="search-filter">
-        <section class="filter-form">
+        <div class="filter-form">
           <label for="productSearch">
             Search Products
           </label>
@@ -156,9 +156,9 @@
             <img src="./Images/Icons/Search.png" alt="Search by product name" class="filter-search-icon">
             <input type="search" placeholder="Search by product name" id="productSearch">
           </section>
-        </section>
+        </div>
 
-        <section class="filter-form">
+        <div class="filter-form">
           <label for="categoryFilter">Category</label>
           
           <select id="categoryFilter">
@@ -170,9 +170,9 @@
             <option value="Riding Toys">Riding Toys</option>
             <option value="Stuffed &amp; Plush Animals">Stuffed &amp; Plush Animals</option>
           </select>
-        </section>
+        </div>
 
-        <section class="filter-form">
+        <div class="filter-form">
           <label for="sortPrice">Sort Products by Price</label>
           
           <select id="sortPrice">
@@ -180,10 +180,10 @@
             <option value="low">Price: Low to High</option>
             <option value="high">Price: High to Low</option>
           </select>
-        </section>
+        </div>
       </form>
 
-      <section class="filter-results">
+      <div class="filter-results">
 
         <p>
           <strong id="productCount">0</strong>
@@ -194,38 +194,38 @@
           <img src="./Images/Icons/Reset.png" alt="Clear Filters" class="small-action-icon">
           Clear Filters
         </button>
-      </section>
+      </div>
 
-      <section class="product-grid" aria-live="polite">
+      <div class="product-grid" aria-live="polite">
         <p class="load-text">Loading products...</p>
-      </section>
-    </section>
+      </div>
+    </div>
   </main>
 
-  <section class="popup" id="productPopup" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="popupProductName">
+  <div class="popup" id="productPopup" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="popupProductName">
 
-    <article class="popup-content">
+    <div class="popup-content">
       <button type="button" class="popup-btn" id="popupBtn" aria-label="Close product details">
 
         <img src="./Images/Icons/Close.png" alt="Popup Close" class="popup-close-icon">
 
       </button>
 
-      <section class="popup-layout">
-        <section class="popup-image">
-          <img alt="Popup Product Image" id="popupProductImage">
-        </section>
+      <div class="popup-layout">
+        <div class="popup-image">
+          <img src="./Images/Products/Load_banner.png" alt="Popup Product Image" id="popupProductImage">
+        </div>
 
-        <section class="popup-info">
+        <div class="popup-info">
           <p class="product-category" id="popupProductCategory"></p>
 
-          <h2 id="popupProductName"></h2>
+          <h2 id="popupProductName">Product Details</h2>
 
           <p class="popup-price" id="popupProductPrice"></p>
 
           <p id="popupProductDiscription"></p>
 
-          <section class="popup-actions">
+          <div class="popup-actions">
             
             <button type="button" class="button-primary" id="popupAddCart">
               <img src="./Images/Icons/Add-cart.png" alt="Add to cart" class="button-icon">
@@ -236,19 +236,19 @@
               <img src="./Images/Icons/Heart1.png" alt="Add to wishlist" class="button-icon">
               Add to Wishlist
             </button>
-          </section>
-        </section>
-      </section>
-    </article>
-  </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Footer -->
    <footer class="site-footer">
     <div class="footer-grid">
 
-      <section class="footer-about">
+      <div class="footer-about">
         <p>A cheerful online toy shop bringing fun, imagination &amp; playful discoveries to families across Sri Lanka.</p>
-      </section>
+      </div>
 
       <section>
         <h3>Shop</h3>
@@ -304,11 +304,11 @@
       </section>
     </div>
 
-    <section class="footer-bottom">
+    <div class="footer-bottom">
       <div class="container">
         <p> &copy; 2026 Toy Haven. All Rights Reserved.</p>
       </div>
-    </section>
+    </div>
 
   </footer>
   
