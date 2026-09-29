@@ -52,7 +52,7 @@
         </a>
 
         <form action="products.html" class="header-search" method="get">
-          <label for="hsearch">Search Marketplace</label>
+          <label for="hSearch">Search Marketplace</label>
           <input type="search" id="hSearch" name="search" placeholder="Search toys, games and gifts...">
           <button type="submit">
             <img src="./Images/Icons/Search.png" alt="Search" class="search-icon">
@@ -145,8 +145,8 @@
       </div> 
     </section>
 
-    <section class="section-container">
-      <section class="checkout-layout">
+    <div class="section-container">
+      <div class="checkout-layout">
         <article class="checkout-card">
           <header class="content-heading">
             <h2>Delivery Details</h2>
@@ -191,8 +191,7 @@
               <label class="payment-method">
                 <input type="radio" name="paymentMethod" value="Card">
                 <span>
-                  <img src="./Images/Icons/Card-Payment.png" alt="Card Payment" class="payment-icon"
->
+                  <img src="./Images/Icons/Card-Payment.png" alt="Card Payment" class="payment-icon">
                   Card
                 </span>
               </label>
@@ -210,46 +209,46 @@
                 <h3>Card Details</h3>
                 <section class="form-group">
                   <label for="cardName">Name on Card</label>
-                  <input type="text" name="" id="cardName" placeholder="Enter Name on Card" autocomplete="cc-name">
+                  <input type="text" name="cardName" id="cardName" placeholder="Enter Name on Card" autocomplete="cc-name">
                   <p class="form-error" id="cardNameError"></p>
                 </section>
 
                 <section class="form-group">
                   <label for="cardNumber">Card Number</label>
-                  <input type="text" name="" id="cardNumber" placeholder="1234 5678 9012 3456"
+                  <input type="text" name="cardNumber" id="cardNumber" placeholder="1234 5678 9012 3456"
                   maxlength="19" inputmode="numeric" autocomplete="cc-number">
                   <p class="form-error" id="cardNumberError"></p>
                 </section>
 
-                <section class="form-row">
+                <div class="form-row">
                   <section class="form-group">
                     <label for="cardExpiry">Expiry Date</label>
-                    <input type="text" id="cardExpiry" placeholder="MM/YY" maxlength="5" autocomplete="cc-exp">
+                    <input type="text" id="cardExpiry" name="cardExpiry" placeholder="MM/YY" maxlength="5" autocomplete="cc-exp">
                     <p class="form-error" id="cardExpiryError"></p>
                   </section>
 
-                  <section class="form-group">
+                  <div class="form-group">
                     <label for="cardCvv">CVV</label>
-                    <input type="password" id="cardCvv" placeholder="123" maxlength="3" inputmode="numeric" autocomplete="cc-csc">
+                    <input type="password" id="cardCvv" name="cardCvv" placeholder="123" maxlength="3" inputmode="numeric" autocomplete="off">
                     <p class="form-error" id="cardCvvError"></p>
-                  </section>
+                  </div>
 
-                  <section>
+                  <div>
                     <p class="card-demo-note">
                       Your card details are securely handled during checkout and are not stored by Toy Haven.
                     </p>
-                  </section>
+                  </div>
 
-                </section>
+                </div>
               </section>
 
               <p class="form-error" id="paymentError"></p>
             </fieldset>
 
-            <section class="checkout-message">
+            <div class="checkout-message">
               <img src="./Images/Icons/Information.png" alt="Checkout message" class="checkout-info-icon">
               <p>Select your preferred payment method to continue with your order.</p>
-            </section>
+            </div>
 
             <button type="submit" class="button button-primary button-full">Place Order</button>
           </form>
@@ -265,26 +264,26 @@
 
         <aside class="checkout-summary">
           <h2>Order Summary</h2>
-          <section id="checkoutItems"></section>
+          <div id="checkoutItems"></div>
 
           <hr>
 
-          <section class="summary-row total-row">
+          <div class="summary-row total-row">
             <span>Estimated total</span>
             <strong id="checkoutTotal">Rs. 0</strong>
-          </section>
+          </div>
         </aside>
-      </section>
-    </section>
+      </div>
+    </div>
   </main>
 
   <!-- Footer -->
    <footer class="site-footer">
     <div class="footer-grid">
 
-      <section class="footer-about">
+      <div class="footer-about">
         <p>A cheerful online toy shop bringing fun, imagination &amp; playful discoveries to families across Sri Lanka.</p>
-      </section>
+      </div>
 
       <section>
         <h3>Shop</h3>
@@ -340,11 +339,11 @@
       </section>
     </div>
 
-    <section class="footer-bottom">
+    <div class="footer-bottom">
       <div class="container">
         <p> &copy; 2026 Toy Haven. All Rights Reserved.</p>
       </div>
-    </section>
+    </div>
 
   </footer>
   
