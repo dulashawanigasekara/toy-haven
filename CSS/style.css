@@ -211,7 +211,7 @@ p{
 
 .button-wishlist:hover{
   background-color: var(--pink);
-  color: var(--white);
+  color: var(--navy);
 }
 
 .fav-btn{
@@ -222,7 +222,7 @@ p{
 
 .fav-btn:hover{
   background-color: var(--pink);
-  color: var(--white);
+  color: var(--navy);
 }
 
 .button-full{
@@ -693,7 +693,7 @@ textarea:focus-visible, select:focus-visible{
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  color: var(--pink-dark);
+  color: var(--navy);
   font-weight: bold;
 }
 
@@ -926,7 +926,7 @@ textarea:focus-visible, select:focus-visible{
 .wishlist-btn:hover, .wishlist-btn.saved {
   border-color: var(--pink);
   background-color: var(--pink);
-  color: var(--white);
+  color: var(--navy);
 }
 
 .new-badge, .product-badge {
@@ -1061,6 +1061,7 @@ textarea:focus-visible, select:focus-visible{
   border-color: var(--pink);
   border-radius: 0 5px 5px 0;
   background-color: var(--pink);
+  color: var(--navy);
 }
 
 .newsletter-input input {
