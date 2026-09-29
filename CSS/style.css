@@ -51,6 +51,7 @@ textarea{
   --pink: #E27396;
   --pink-dark: #C85E80;
   --pink-light: #FFF3F7;
+  --pink-text: #B84E72;
 
   --blue: #0077B6;
   --blue-dark: #005E91;
@@ -139,7 +140,7 @@ p{
 
 .section-label, .ftr-label, .prime-label, .note, .hero-para{
   margin-bottom: 5px;
-  color: var(--pink-dark);
+  color: var(--pink-text);
   font-size: 0.85rem;
   font-weight: bold;
   letter-spacing: 0.07em;
@@ -764,7 +765,7 @@ textarea:focus-visible, select:focus-visible{
 
 .ftr-product-price{
   margin-bottom: 20px;
-  color: var(--pink-dark);
+  color: var(--pink-text);
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -875,7 +876,7 @@ textarea:focus-visible, select:focus-visible{
 }
 
 .product-category{
-  color: var(--pink-dark);
+  color: var(--pink-text);
   font-size: 0.78rem;
   font-weight: bold;
   letter-spacing: 0.03em;
@@ -1269,7 +1270,7 @@ textarea:focus-visible, select:focus-visible{
 
 .popup-price{
   margin-bottom: 17px;
-  color: var(--pink-dark);
+  color: var(--pink-text);
   font-size: 1.55rem;
   font-weight: bold;
 }
@@ -1444,7 +1445,7 @@ textarea:focus-visible, select:focus-visible{
 }
 
 .total-row strong{
-  color: var(--pink-dark);
+  color: var(--pink-text);
   font-size: 1.3rem;
 }
 
